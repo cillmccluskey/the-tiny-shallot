@@ -1,0 +1,111 @@
+body {
+  font-family: "Cedarville Cursive", cursive;
+}
+
+.logo img {
+  height: 120px;
+  padding-left: 45%;
+  padding-right: 55%;
+  margin: 0px;
+  width: 114px;
+}
+
+h2 {
+  text-align: center;
+  padding-right: 40px;
+  margin: 0px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 20px 0px 20px;
+  height: 50px;
+  font-size: 18px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+a {
+  color: black;
+  padding-right: 50px;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav-links a:after {
+  content: "|";
+  padding: 0px 5px 0px 50px;
+}
+
+.nav-links a:last-child:after {
+  content: "";
+  padding: 0;
+}
+
+/*Hero Image Section*/
+
+section {
+  margin: 20px;
+}
+
+.recipe-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+  margin: 40px;
+}
+
+.recipe-box a {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.recipe-box p {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .recipe-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  .recipe-box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 4000px) {
+  .recipe-box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.recipe-category {
+  border: 1px solid black;
+}
+
+.recipe-box-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+  padding: 0px 10px 0px 10px;
+}
